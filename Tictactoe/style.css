@@ -1,0 +1,203 @@
+h1 {
+    font-family: "Times New Roman", Times, serif;
+    text-shadow: 2px 2px 5px blue;
+    
+}
+h2 {
+    font-family: "Times New Roman", Times, serif;
+    
+}
+h3 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+body {background-color: rgb(173, 216, 230);}
+
+.one{
+
+    float: auto;
+    bottom: 75%;
+    left:  36%;
+     position:  absolute;
+
+}
+
+
+
+
+
+ .two{
+    float: auto;
+    bottom: 75%;
+    left:  54%;
+     position:  absolute;
+ 
+ 
+ }
+
+ 
+
+
+ .three{
+    float: auto;
+    bottom:75% ;
+    left:  65%;
+     position:  absolute;
+ 
+ 
+ }
+
+ 
+
+
+
+ .four{
+    float: auto;
+    bottom: 64% ;
+    left:  39%;
+     position:  absolute;
+ 
+ 
+ }
+
+ .five{
+    float: auto;
+    bottom: 64%;
+    left:  53%;
+     position:  absolute;
+ 
+ 
+ }
+
+
+
+ 
+
+ 
+
+
+ .six{
+    float: auto;
+    bottom: 64%;
+    left:  63%;
+     position:  absolute;
+ 
+ 
+ }
+
+
+
+ .seven{
+    float: auto;
+    bottom: 50%;
+    left:  36%;
+     position:  absolute;
+ 
+ 
+ }
+
+ .grid-container {
+    display: grid;
+    row-gap: 0px;
+    grid-template-columns: 75% 75% 75%;
+    grid-template-rows: 75%,75%,75%;
+    font-size: 5pt;
+    /*background-color: #2196F3;*/
+    padding: 10px;
+    position: fixed;
+    top: 35%;
+    left: 30%; 
+    float: right;
+  }
+  .grid-item {
+    background-color: rgb(173, 216, 230);
+   border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 50px;
+    font-size: 20px;
+    text-align: center;
+  }
+ .eight{
+    float: auto;
+    bottom: 50%;
+    left:  53%;
+     position:  absolute;
+ }
+
+
+ 
+
+
+ .nine{
+    float: auto;
+    bottom: 50%;
+    left:  66%;
+     position:  absolute;
+ 
+ 
+ }
+
+ 
+
+
+.line1{
+border-left: 6px solid black;
+height: 500px;
+position: absolute;
+left: 50%;
+bottom: 30%;
+}
+.line2{
+
+    border-left: 6px solid black;
+    height: 500px;
+    position: absolute;
+    left: 60%;
+    bottom: 30%;
+
+
+}
+.line3{
+    width: 500px;
+    height: 6px;
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    border: 0 none;
+
+
+}
+
+.line4{
+    width: 500px;
+    height: 6px;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    border: 0 none;
+
+
+}
+@media(max-width:500px){
+
+    .grid-container {
+        display: grid;
+        row-gap: 0px;
+        grid-template-columns: 20% 20% 20%;
+        grid-template-rows: 10%,10%,10%;
+        font-size: 5pt;
+        /*background-color: #2196F3;*/
+        padding: 10px;
+        position: fixed;
+        top: 35%;
+        left: 20%; 
+        float: right;
+      }
+
+
+}

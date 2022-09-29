@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="tictactoe.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+   <!-- Add at the top of your body  before the H1-->
+<div class="LoginCtrl">
+    <div class="LoginWait">Please wait...</div>
+    <div class="LoginNo">
+    <button onclick="myFirebase.googleLogin()">Login With Google</button>
+    <button onclick="myFirebase.gitHubLogin()">Login With GitHub</button>
+    </div>
+    <div class="LoginYes">
+    <div class="Username"></div>
+    <button onclick="myFirebase.googleLogout()">Logout</button>
+    <button onclick="myFirebase.gitHubLogout()">Logout</button>
+    </div>
+    </div>
+    
+    <h1>Tic-Tac-Toe</h1>
+
+    <div class="LoginWait">
+
+        <h2>Please wait...</h2>
+
+    </div>
+
+
+    <div class="LoginNo">
+
+        <h2>Please log in...</h2>
+
+    </div>
+
+
+    <div class="LoginYes">
+      <!-- PUT YOUR CONTENT (the stuff after the H1) HERE -->
+    </div>
+
+
+    <h3>Created by Andrew & James</h3>
+    <button onclick=save()>save</button>
+    <button onclick=load()>load</button>
+    <button onclick=reset()>reset</button>
+  
+    
+    <div class="grid-container">
+        <button class =  grid-item onclick = checkxy(0) id = tttbuttons1></button>
+    <button class =  grid-item onclick = checkxy(1) id = tttbuttons2></button>
+    <button  class =  grid-item onclick = checkxy(2) id = tttbuttons3></button>
+    <button  class =  grid-item onclick = checkxy(3) id = tttbuttons4></button>
+    <button class =  grid-item onclick = checkxy(4) id = tttbuttons5></button>
+    <button class =  grid-item onclick = checkxy(5) id = tttbuttons6></button>
+    <button class =  grid-item onclick = checkxy(6) id = tttbuttons7></button>
+    <button class =  grid-item onclick = checkxy(7) id = tttbuttons8></button>
+    <button class =   grid-item onclick = checkxy(8) id = tttbuttons9></button>
+      </div>
+
+    <!--The core firebase JS SDK is always required and must be loaded first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <!-- for DB -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyAHb_aM0kEpUw7SmeYw6uxK8IpS6TdaALQ",
+  authDomain: "tictactoecsci.firebaseapp.com",
+  projectId: "tictactoecsci",
+  storageBucket: "tictactoecsci.appspot.com",
+  messagingSenderId: "210574690242",
+  appId: "1:210574690242:web:66427b4c3f3bb98bddf85b",
+  databaseURL: "https://tictactoecsci-default-rtdb.firebaseio.com/"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+    
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+    
+    
+    <script src="myFirebase.js"></script>
+    <!-- for DB -->
+    <script src="myFirebaseDB.js"></script>
+    
+    <script src="tictactoe.js"></script>
+</body>
+</html>
